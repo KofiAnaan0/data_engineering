@@ -10,4 +10,10 @@ This project is an end-to-end data engineering pipeline designed to extract and 
 Gasoline price and weather data are scraped from the internet as **HTML content** and temporarily stored in a designated folder. Using **BeautifulSoup**, the relevant price and weather data are extracted from the HTML. Once extracted, the data is transformed into **JSON format** for further processing and storage.
 
 ## Data Loading & Storage
-The transformed data is then loaded to a postgresql database which then is used to conduct data analysis and train predictive models
+
+After the data has been extracted and transformed into **JSON format**, it is loaded into a **PostgreSQL database** for structured storage and efficient querying. The database schema is designed to store both gasoline price and weather data, ensuring data integrity and consistency.
+
+Once stored in PostgreSQL, the data can be used for **exploratory data analysis (EDA)**, **report generation**, and **visualization**. Additionally, the stored data serves as a foundation for **training predictive models**, enabling insights such as fuel price forecasting and weather trend analysis.
+
+To maintain data accuracy and prevent redundancy, **data validation checks** are performed before loading, ensuring only clean and structured data is stored in the database.
+
